@@ -17,14 +17,13 @@ lexicographical_last_str(std::vector<std::string>& vect) {
 	
 	int index{ 0 };
 	std::string best = vect[0];
-	for (int i = 0; i < vect.size(); i++)
-	{
+	for (int i = 0; i < vect.size(); i++){
 		if (vect[i] > best) {
 			index = i;
 			best = vect[i];
 		}
 	}
-
+	
 	return vect.begin() + index;
 }
 
